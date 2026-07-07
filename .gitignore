@@ -1,0 +1,19 @@
+# Environment secrets
+.env
+
+# Backend build output
+backend/target/
+backend/*.log
+backend/backend-*.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

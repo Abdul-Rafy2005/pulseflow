@@ -1,3 +1,52 @@
 spring:
   application:
     name: backend
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/pulseflow}
+    username: ${SPRING_DATASOURCE_USERNAME:pulseflow}
+    password: ${SPRING_DATASOURCE_PASSWORD:pulseflow}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  rabbitmq:
+    host: ${SPRING_RABBITMQ_HOST:localhost}
+    port: ${SPRING_RABBITMQ_PORT:5672}
+    username: ${SPRING_RABBITMQ_USERNAME:guest}
+    password: ${SPRING_RABBITMQ_PASSWORD:guest}
+    listener:
+      simple:
+        default-requeue-rejected: false
+        retry:
+          enabled: true
+          max-attempts: ${RABBITMQ_RETRY_MAX_ATTEMPTS:3}
+          initial-interval: 1000
+          multiplier: 2.0
+          max-interval: 10000
+  data:
+    redis:
+      host: ${SPRING_DATA_REDIS_HOST:localhost}
+      port: ${SPRING_DATA_REDIS_PORT:6379}
+    web:
+      pageable:
+        default-page-size: 20
+        max-page-size: 100
+        one-indexed-parameters: false
+
+server:
+  port: ${SERVER_PORT:8080}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:phase2-dev-secret-change-me-please-use-a-longer-32-byte-secret}
+    expiration: ${JWT_EXPIRATION:PT24H}
+  events:
+    api-key: ${EVENTS_API_KEY:dev-api-key-change-me-in-production}
+    rate-limit:
+      max-requests: ${EVENTS_RATE_LIMIT_MAX:100}
+      window-seconds: ${EVENTS_RATE_LIMIT_WINDOW_SECONDS:60}

@@ -1,8 +1,17 @@
 package com.pulseflow.backend;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
 import com.pulseflow.backend.auth.JwtService;
 import com.pulseflow.backend.auth.UserRepository;
 import com.pulseflow.backend.events.EventRepository;
@@ -20,7 +29,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
                 + "org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration,"
                 + "org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration"
 })
-class BackendApplicationTests {
+@AutoConfigureMockMvc
+class Phase1SmokeTest {
 
     @MockBean
     private UserRepository userRepository;
@@ -49,9 +59,28 @@ class BackendApplicationTests {
     @MockBean
     private AmqpAdmin amqpAdmin;
 
+    @Autowired
+    private MockMvc mockMvc;
+
     @Test
-    void contextLoads() {
+    void healthEndpointReturnsUp() throws Exception {
+        mockMvc.perform(get("/health"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status").value("UP"))
+                .andExpect(jsonPath("$.service").value("backend"));
     }
 
+    @Test
+    void openApiDocsAreExposed() throws Exception {
+        String response = mockMvc.perform(get("/v3/api-docs").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.openapi").exists())
+                .andExpect(jsonPath("$.info.title").value("PulseFlow API"))
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+
+        assertThat(response).contains("/health");
+    }
 }
 

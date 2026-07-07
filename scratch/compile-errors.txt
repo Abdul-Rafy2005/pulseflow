@@ -1,0 +1,233 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.pulseflow:backend >------------------------
+[INFO] Building backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 51 source files with javac [debug parameters release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,16] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,24] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,44] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,60] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,74] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[2,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,22] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,23] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,55] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,71] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,93] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,121] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,23] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,55] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,65] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,73] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,87] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,141] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[5,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[6,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[6,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,56] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,57] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,101] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,103] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,105] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,159] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,203] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,219] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,27] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,47] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,49] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[9,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[9,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[9,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[10,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,16] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,24] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,44] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,60] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,74] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,82] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[2,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,22] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,23] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,43] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,59] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,73] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,93] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,25] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,35] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,63] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,25] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,35] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,43] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[6,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,29] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,56] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,57] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,5] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,7] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,9] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,11] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,13] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,17] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,27] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,33] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,5] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,7] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,9] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,11] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,13] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,17] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,37] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,57] illegal character: '\u0000'
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.004 s
+[INFO] Finished at: 2026-07-04T17:51:35+05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project backend: Compilation failure: Compilation failure: 
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,16] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,24] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,44] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,60] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[1,74] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[2,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,22] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,23] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,55] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,71] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,93] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[3,121] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,23] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,55] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,65] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,73] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,87] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[4,141] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[5,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[6,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[6,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,56] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,57] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,101] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,103] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,105] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,159] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,203] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[7,219] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,27] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,47] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[8,49] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[9,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[9,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[9,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/config/WebConfig.java:[10,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,16] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,24] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,44] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,60] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,74] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[1,82] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[2,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,22] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,23] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,43] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,59] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,73] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[3,93] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,25] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,35] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[4,63] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,2] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,25] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,35] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[5,43] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[6,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,29] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,56] class, interface, enum, or record expected
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[7,57] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,5] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,7] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,9] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,11] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,13] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,17] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,27] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[8,33] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,1] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,3] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,5] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,7] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,9] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,11] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,13] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,15] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,17] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,37] illegal character: '\u0000'
+[ERROR] /D:/Projects/pulseflow/backend/src/main/java/com/pulseflow/backend/events/dto/EventResponse.java:[9,57] illegal character: '\u0000'
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

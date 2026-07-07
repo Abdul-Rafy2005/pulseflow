@@ -1,0 +1,87 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: pulseflow-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: pulseflow
+      POSTGRES_USER: pulseflow
+      POSTGRES_PASSWORD: pulseflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pulseflow -d pulseflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7
+    container_name: pulseflow-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: pulseflow-rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pulseflow-backend
+    restart: unless-stopped
+    ports:
+      - "8082:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/pulseflow
+      SPRING_DATASOURCE_USERNAME: pulseflow
+      SPRING_DATASOURCE_PASSWORD: pulseflow
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+      JWT_SECRET: ${JWT_SECRET:-change-me-to-a-long-random-string-at-least-32-bytes}
+      EVENTS_API_KEY: ${EVENTS_API_KEY:-dev-api-key-change-me-in-production}
+      EVENTS_RATE_LIMIT_MAX: ${EVENTS_RATE_LIMIT_MAX:-100}
+      EVENTS_RATE_LIMIT_WINDOW_SECONDS: ${EVENTS_RATE_LIMIT_WINDOW_SECONDS:-60}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: pulseflow-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
