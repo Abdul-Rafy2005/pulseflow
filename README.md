@@ -16,8 +16,7 @@ flowchart TB
 
     ClientApp -->|POST /events| API
     API -->|publish EventMessage| RMQ
-
-    subgraph Write Path
+    
         Consumer[Analytics Consumer]
         PG[(PostgreSQL)]
         Redis1[(Redis)]
@@ -26,15 +25,12 @@ flowchart TB
         Consumer -->|persist event| PG
         Consumer -->|update stats| Redis1
         Consumer -->|broadcast after processing| WS
-    end
 
-    subgraph Read Path
         AnalyticsAPI[Analytics REST API]
         PG2[(PostgreSQL)]
         Redis2[(Redis)]
         AnalyticsAPI -->|read| PG2
         AnalyticsAPI -->|read cached stats| Redis2
-    end
 
     Dashboard -->|REST + STOMP| AnalyticsAPI
     Dashboard -->|subscribe live updates| WS
