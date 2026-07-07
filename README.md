@@ -7,27 +7,35 @@ PulseFlow is an event-driven analytics platform: client apps send activity event
 ---
 
 ## Architecture
-
 ```mermaid
 flowchart TB
     ClientApp[Client App]
     API[Spring Boot REST API]
     RMQ[RabbitMQ]
-    Consumer[Analytics Consumer]
-    PG[(PostgreSQL)]
-    Redis[(Redis)]
-    AnalyticsAPI[Analytics REST API]
-    WS[WebSocket Broadcaster]
     Dashboard[React Dashboard]
 
     ClientApp -->|POST /events| API
     API -->|publish EventMessage| RMQ
-    RMQ --> Consumer
-    Consumer -->|persist event| PG
-    Consumer -->|update stats| Redis
-    Consumer -->|broadcast after processing| WS
-    AnalyticsAPI -->|read| PG
-    AnalyticsAPI -->|read cached stats| Redis
+
+    subgraph Write Path
+        Consumer[Analytics Consumer]
+        PG[(PostgreSQL)]
+        Redis1[(Redis)]
+        WS[WebSocket Broadcaster]
+        RMQ --> Consumer
+        Consumer -->|persist event| PG
+        Consumer -->|update stats| Redis1
+        Consumer -->|broadcast after processing| WS
+    end
+
+    subgraph Read Path
+        AnalyticsAPI[Analytics REST API]
+        PG2[(PostgreSQL)]
+        Redis2[(Redis)]
+        AnalyticsAPI -->|read| PG2
+        AnalyticsAPI -->|read cached stats| Redis2
+    end
+
     Dashboard -->|REST + STOMP| AnalyticsAPI
     Dashboard -->|subscribe live updates| WS
 ```
