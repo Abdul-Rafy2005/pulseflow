@@ -23,13 +23,13 @@ flowchart TB
     ClientApp -->|POST /events| API
     API -->|publish EventMessage| RMQ
     RMQ --> Consumer
-    Consumer --> PG
-    Consumer --> Redis
-    Consumer --> WS
-    AnalyticsAPI --> Redis
-    AnalyticsAPI --> PG
+    Consumer -->|persist event| PG
+    Consumer -->|update stats| Redis
+    Consumer -->|broadcast after processing| WS
+    AnalyticsAPI -->|read| PG
+    AnalyticsAPI -->|read cached stats| Redis
     Dashboard -->|REST + STOMP| AnalyticsAPI
-    Dashboard --> WS
+    Dashboard -->|subscribe live updates| WS
 ```
 
 **Key design choices:**
