@@ -142,22 +142,6 @@ See [`.env.example`](.env.example). Key variables:
 
 ---
 
-## Build Phases (PRD section 13)
-
-| Phase | Scope | Status |
-|-------|-------|--------|
-| 1 | Foundation, Docker infra, health, Swagger | Done |
-| 2 | Auth (register/login/profile, JWT) | Done |
-| 3 | Events write path to RabbitMQ | Done |
-| 4 | Consumer, Postgres/Redis, analytics read APIs | Done |
-| 5 | DLQ, failed_events, retry policy | Done |
-| 6 | Monitoring (queue/redis status, audit logs) | Done |
-| 7 | WebSocket broadcast on processed events | Done |
-| 8 | React dashboard (REST + WebSocket) | Done |
-| 9 | Pagination, filtering, rate limiting, tests, README, deployment | Done |
-
----
-
 ## Deployment Notes
 
 - **Docker Compose** (included): `docker compose up -d --build` runs the full stack with health-checked dependencies.
