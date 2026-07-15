@@ -165,31 +165,8 @@ A module is NOT done until:
 
 ---
 
-## 11. Commands Reference
 
-```bash
-# Start infra (Postgres, Redis, RabbitMQ)
-docker compose up -d postgres redis rabbitmq
-
-# Start full stack (once backend/frontend are containerized)
-docker compose up -d
-
-# Backend (dev, outside Docker)
-cd backend && ./mvnw spring-boot:run
-
-# Backend tests
-cd backend && ./mvnw test
-
-# Frontend
-cd frontend && npm install && npm run dev
-
-# RabbitMQ management UI
-http://localhost:15672  (default guest/guest — change in non-local envs)
-```
-
----
-
-## 12. When In Doubt
+## 11. When In Doubt
 
 If a requirement is ambiguous or missing from `PRD.md`, the agent should:
 1. Make the most reasonable assumption consistent with the existing
