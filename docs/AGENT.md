@@ -1,6 +1,6 @@
 # AGENT.md — Agent Instructions for PulseFlow
 
-This file tells any AI coding agent (Claude Code, Cursor, etc.) how to work in
+This file tells any AI coding agent, how to work in
 this repo. Read this fully before writing code. The full product spec lives in
 `PRD.md` — read that too before starting a new module. This file is about
 *how* to build; PRD.md is about *what* to build.
